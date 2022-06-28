@@ -1,12 +1,14 @@
 var originalStory = '';
 //var userInputs = [];
 var numberOfQuestions = 10;
+var questionsTotal = numberOfQuestions;
 
 var userInputs = ['2090', 'Ashley', 'website', 'goverment system', 'John', 'working out', 'graduation party problem', 'Paul', 'whiskey', 'tea'];
 var questionArray = ['Enter year', 'Enter name', 'Enter noun', 'Enter noun', 'Enter name', 'Enter verb with -ing', 'Enter noun', 'Enter name', 'Enter noun', 'Enter noun'];
 
 for (var i = 0; i < questionArray.length; i++) {
-	console.log(questionArray[i]);
+	console.log(questionArray[i] + ` ${questionsTotal} questions left`);
+	questionsTotal--;
 }
 
 originalStory = `In ${userInputs[0]} computer pioneer ${userInputs[1]} found herself working on ${userInputs[2]}. 
